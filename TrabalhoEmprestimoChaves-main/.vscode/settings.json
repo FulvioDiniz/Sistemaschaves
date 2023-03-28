@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.project.referencedProjects": [
+        {
+           "projectName": "<nome_do_projeto_referenciado>"
+        }
+    ],
+    "java.project.buildCommands": [
+      {
+         "name": "Build",
+       "args": ["-d", "${java.project.outputPath}", "-cp", "${java.project.classpath}", "${java.project.sourcePaths}/**/*.java"]
+    }
+]
+}
